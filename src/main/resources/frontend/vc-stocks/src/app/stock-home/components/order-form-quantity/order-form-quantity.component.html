@@ -1,0 +1,6 @@
+<div>
+  <span>
+    <input id="quantity-input" type="number" class="inputBox" [(ngModel)]="pendingQuantity"
+      [disabled]="data.ordered === 'false'" (input)="updateData()">
+  </span>
+</div>

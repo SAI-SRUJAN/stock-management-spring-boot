@@ -1,0 +1,13 @@
+<div>
+  <div class="col-12 order-form-content">
+    <div class="order-form-table">
+      <ag-grid-angular #agGrid style="width: 100%;" id="myGrid" class="ag-theme-balham" [style.height.px]="setHeight()"
+        [columnDefs]="columnDefs" [rowData]="rowData" [defaultColDef]="defaultColDef" [context]="context"
+        (gridReady)="onGridReady($event)" [enableSorting]="true" [floatingFilter]="true">
+      </ag-grid-angular>
+    </div>
+  </div>
+  <div class="col-12 pad-0">
+    <button class="btn update-btn" [disabled]="isDataChanged()" (click)="updateData(rowData)">Update</button>
+  </div>
+</div>

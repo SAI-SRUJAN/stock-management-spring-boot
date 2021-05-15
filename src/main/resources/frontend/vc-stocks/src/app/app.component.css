@@ -1,0 +1,137 @@
+.header{
+    background: #017BCE;
+    color: white;
+    line-height: 3.5;
+    border-bottom: 5px solid #984646 !important;
+}
+
+.logo{
+    height: 76px;
+    object-fit: contain;
+}
+
+.image{
+    background: white;
+}
+
+.pad-0 {
+    padding: 0px;
+}
+
+.header-content{
+    text-align: center;
+    margin: 4px 0px 0px 0px;
+    line-height: 3.5;
+    font-size: 20px;
+}
+
+.user-name{
+    text-align: end;
+    line-height: 3.5;
+    margin: 10px 0px 0px 0px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0px 0px 4px 4px
+  }
+
+.down {
+   transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+}
+
+.pad-0{
+    padding:0px;
+}
+
+.content{
+    margin:0px 0px 0px 5px;
+}
+
+.sub-header{
+    background: lightgray;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #F5F5F5;
+    color: black;
+    /* margin-top: 5px; */
+    padding: 0px;
+    line-height: 3em;
+}
+
+.nav-bar-content {
+    position: relative;
+    width: 135px;
+    text-align: center;
+    border-radius: 0px;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav-bar-content.active {
+    background-color: #984646 !important;
+    color: white !important;
+    transform: scale(1.019);
+    z-index: 10;
+}
+
+.nav-bar-content:hover{
+    background-color: lightgray;
+    color: white;
+}
+
+.toggleButton{
+    outline: none;
+    margin: 0px 0px 0px
+}
+
+.user-name-button{
+    text-decoration: underline;
+}
+
+.topnav-right {
+    float: right;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #017BCE;
+    border-bottom: 16px solid #984646;
+    width: 120px;
+    height: 120px;
+    top: 45%;
+    left: 45%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+  }
+
+  .spinner{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

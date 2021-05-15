@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.ag-theme-balham .ag-icon {
+    color: black !important;
+}
+
+.ag-theme-balham .low-band-warning{
+    color: red !important;
+    border : 1.3px solid red !important;
+}
+
+.ag-theme-balham .ag-header-cell-label .ag-header-icon {
+    display: none !important;
+}
+
+.ag-theme-balham .ag-icon-desc {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid white;
+}
+
+.ag-theme-balham .ag-icon-asc {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid white;
+    background-position: top;
+}
+
+.ag-theme-balham .ag-icon-asc::before{
+    display: none;
+}
+
+.ag-theme-balham .ag-icon-desc::before{
+    display: none;
+}
+
+.ag-cell-focus,
+.ag-cell-no-focus {
+    border: none !important;
+}
+
+.ag-cell:focus {
+    border: none !important;
+    outline: none;
+}
+
+.ag-theme-balham .ag-header {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: white;
+    background-color: #017BCE;
+    height: 35px !important;
+}
+
+.ag-theme-balham .ag-header-cell-moving {
+    background-color: #017BCE;
+}
+
+.ag-theme-balham .ag-header-row {
+    height: 35px !important;
+}
+
+.ag-theme-balham .ag-floating-filter-body input {
+    color: black;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.vc-snackbar {
+    font-family: AkzidenzGrotesk !important;
+    display: flex;
+    justify-content: center !important;
+    color: white;
+    background-color: #984646;
+    border-color: #380101;
+    height: 40px;
+    min-width: 200px !important;
+    border-radius: 0 0 0.8rem 0.8rem !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+<div>
+  <div class="col-12 header">
+    <i class="fas fa-chevron-right"></i>
+    Add A New User
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the name of the user
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="userName">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the password for the user
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="password">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Select the role of user
+    </div>
+    <div class="col-2 pad-0">
+      <ng-select [items]="authorities" [(ngModel)]="authority" [clearable]="false">
+      </ng-select>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0">
+    </div>
+    <div class="col-2 pad-0">
+      <button class="btn add-btn" [ngClass]="enableAdd() ? 'cursor-not-allowed' : ''" [disabled]="enableAdd()"
+        (click)="addBand()">Add</button>
+    </div>
+  </div>
+</div>

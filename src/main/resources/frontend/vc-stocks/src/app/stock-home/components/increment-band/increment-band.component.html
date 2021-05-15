@@ -1,0 +1,11 @@
+<div>
+    <span>
+        <mat-slide-toggle color="primary" (change)="setBandSize($event)">50</mat-slide-toggle>
+    </span>
+    <span class="input-span">
+        <input id="increment-input" type="number" class="inputBox" [(ngModel)]="incrementCount">
+    </span>
+    <span class="icons plus" [style.pointerEvents]="disable()? 'none' : ''">
+        <i class="fas fa-plus-square" (click)="incrementBand()"></i>
+    </span>
+</div>

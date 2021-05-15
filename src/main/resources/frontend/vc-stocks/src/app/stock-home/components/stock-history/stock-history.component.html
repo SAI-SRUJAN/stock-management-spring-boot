@@ -1,0 +1,30 @@
+<div>
+  <div class="row">
+    <div class="col-10 header">
+      <i class="fas fa-chevron-right"></i>
+      Stock History
+    </div>
+    <div class="col-2 header">
+      <button *ngIf="isAdmin" class="pull-right download-button" (click)="downloadReport()">
+        Download History Report
+      </button>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-6">
+      Select the name of the band
+    </div>
+    <div class="col-6">
+      <ng-select [items]="bandNames" [(ngModel)]="bandName" (change)="getBandHistory($event)" [clearable]="false">
+      </ng-select>
+    </div>
+  </div>
+  <div class="col-12 home-content">
+    <div class="stocks-table">
+      <ag-grid-angular #agGrid style="width: 100%;" id="myGrid" class="ag-theme-balham" [style.height.px]="setHeight()"
+        [columnDefs]="columnDefs" [rowData]="rowData" [defaultColDef]="defaultColDef" [context]="context"
+        (gridReady)="onGridReady($event)" [enableSorting]="true" [floatingFilter]="true">
+      </ag-grid-angular>
+    </div>
+  </div>
+</div>

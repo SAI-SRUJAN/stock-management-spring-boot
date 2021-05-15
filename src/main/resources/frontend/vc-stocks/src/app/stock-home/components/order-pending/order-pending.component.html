@@ -1,0 +1,15 @@
+<div>
+  <div class="col-12 header">
+    <i class="fas fa-chevron-right"></i>
+    Stock Inventory
+  </div>
+  <div class="col-12 order-pending-content">
+    <div class="order-pending-table">
+      <ag-grid-angular #agGrid style="width: 100%;" id="myGrid" class="ag-theme-balham" [style.height.px]="setHeight()"
+        [columnDefs]="columnDefs" [rowData]="rowData" [defaultColDef]="defaultColDef" [context]="context"
+         (gridReady)="onGridReady($event)" [enableSorting]="true"
+        [floatingFilter]="true">
+      </ag-grid-angular>
+    </div>
+  </div>
+</div>

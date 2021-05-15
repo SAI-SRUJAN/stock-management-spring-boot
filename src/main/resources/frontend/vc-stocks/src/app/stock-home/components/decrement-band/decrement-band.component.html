@@ -1,0 +1,8 @@
+<div>
+    <span>
+        <input id="decrement-input" type="number" class="inputBox decrement-input" [(ngModel)]="decrementCount">
+    </span>
+    <span class="icons minus" [style.pointerEvents]="disable()? 'none' : ''">
+        <i class="fas fa-minus-square" (click)="decrementBand()"></i>
+    </span>
+</div>

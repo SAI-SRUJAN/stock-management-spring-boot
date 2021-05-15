@@ -1,0 +1,27 @@
+<div class="col-xs-12 pad-0">
+  <span class="col-xs-11 pad-0">
+    <h5>Update Bands</h5>
+  </span>
+</div>
+<hr />
+<div class="row content">
+  <div class="col-6 pad-0 label mandatory-field">
+    Enter the invoice number
+  </div>
+  <div class="col-6 pad-0">
+    <input class="inputBox form-control" [(ngModel)]="invoiceNo">
+  </div>
+</div>
+<div class="row content">
+  <div class="col-6 pad-0 label mandatory-field">
+    Updated By
+  </div>
+  <div class="col-6 pad-0">
+    {{data}}
+  </div>
+</div>
+<hr />
+<mat-dialog-actions class="pull-right">
+  <button md-button (click)="close()" class="btn btn-secondary">Close</button>
+  <button md-button (click)="update()" class="btn btn-primary">Update</button>
+</mat-dialog-actions>

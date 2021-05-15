@@ -1,0 +1,28 @@
+<div>
+  <div class="row">
+    <div class="col-10 header">
+      <i class="fas fa-chevron-right"></i>
+      Stock Inventory
+    </div>
+    <div class="col-2 header">
+      <button *ngIf="isAdmin" class="pull-right download-button" (click)="downloadReport()">
+        Download Stock Report
+      </button>
+    </div>
+  </div>
+  <div class="col-12 home-content">
+    <div class="stocks-table">
+      <ag-grid-angular #agGrid style="width: 100%;" id="myGrid" class="ag-theme-balham" [style.height.px]="setHeight()"
+        [columnDefs]="columnDefs" [rowData]="rowData" [defaultColDef]="defaultColDef" [context]="context"
+        (gridReady)="onGridReady($event)" [enableSorting]="true" [floatingFilter]="true"
+        [rowClassRules]="rowClassRules">
+      </ag-grid-angular>
+    </div>
+    <div class="col-12 pad-0">
+      <button class="btn update-btn" [disabled]="isDataChanged()" (click)="updatePopUp()">Update</button>
+      <button class="btn undo-btn" [disabled]="isDataChanged()" (click)="undo()">Undo
+        <i class="fa fa-undo" (click)="undo()"></i>
+      </button>
+    </div>
+  </div>
+</div>

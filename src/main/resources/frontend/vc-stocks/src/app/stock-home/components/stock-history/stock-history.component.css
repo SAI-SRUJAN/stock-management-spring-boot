@@ -1,0 +1,28 @@
+.content{
+    padding: 10px;
+    font-size: 13px;
+    margin:0px
+}
+
+.download-button{
+    background-color: #984646 !important;
+    color: white;
+}
+
+.header{
+    text-align: left;
+    background: #F5F5F5;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    /* border:1px solid lightgray; */
+}
+
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.pull-right{
+    float: right;
+}

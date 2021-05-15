@@ -1,0 +1,68 @@
+$ag-icons-path: "../node_modules/ag-grid/src/styles/icons/";
+@import "~ag-grid/src/styles/ag-grid.scss";
+@import "~ag-grid/src/styles/ag-theme-balham.scss";
+.ag-theme-balham .ag-icon-desc {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid white;
+}
+
+.ag-theme-balham .ag-icon-asc {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid white;
+    background-position: top;
+}
+
+.ag-cell-focus,
+.ag-cell-no-focus {
+    border: none !important;
+}
+
+.ag-theme-balham .ag-header-cell-label {
+    span {
+        height: auto;
+    }
+}
+
+.ag-cell:focus {
+    border: none !important;
+    outline: none;
+}
+
+.ag-theme-balham .ag-header {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: white;
+    background-color: #4BA1D2;
+    height: 35px !important;
+}
+
+.ag-theme-balham .ag-header-cell-moving {
+    background-color: #4BA1D2;
+}
+
+.ag-theme-balham .ag-header-row {
+    height: 35px !important;
+}
+
+.ag-theme-balham .ag-floating-filter-body input {
+    color: black;
+}
+
+$secondary-font-size: 13px;
+$secondary-font-weight:bold;
+$odd-row-background-color: #FFFFFF;
+$panel-background-color: #FFFFFF;
+$header-background-color: #FFFFFF;
+$card-background-color:#FFFFFF;
+$header-height: 50px;
+$border-color:#b3b3b3;

@@ -1,0 +1,66 @@
+<div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the code number of the band
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="bandName">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the size and thickness of the band
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="bandSize">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label">
+      Enter the purchased quantity of the band (50mts)
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="bandPurchasedQuantityFifty">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the purchased quantity of the band
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="bandPurchasedQuantity">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the band limit for notification
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="bandLimit">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the size of the roll
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="rollSize">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0 label mandatory-field">
+      Enter the type of the band
+    </div>
+    <div class="col-2 pad-0">
+      <input class="inputBox form-control" [(ngModel)]="bandType">
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-2 pad-0">
+    </div>
+    <div class="col-2 pad-0">
+      <button class="btn add-btn" [ngClass]="enableAdd() ? 'cursor-not-allowed' : ''" [disabled]="enableAdd()"
+        (click)="addBand()">Add</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+.header{
+    text-align: left;
+    background: #F5F5F5;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    /* border:1px solid lightgray; */
+}
+
+.pad-0{
+    padding:0px;
+}
+
+.content{
+    margin:0px;
+    font-size: 13px;
+}
+
+.sub-header{
+    background: lightgray;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn{
+    background-color: #017BCE;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.btn:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.cursor-not-allowed{
+    cursor: not-allowed;
+}
+
+.stocks-table{
+    margin-top:10px;
+}
+
+.update-btn {
+    margin-top:10px
+}
+
+.undo-btn {
+    margin-top:10px
+}
+
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.home-content{
+    margin: 15px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.pull-right{
+    float: right;
+}
+
+.download-button{
+    background-color: #984646 !important;
+    color: white;
+}

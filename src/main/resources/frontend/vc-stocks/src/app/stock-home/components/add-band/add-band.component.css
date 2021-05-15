@@ -1,0 +1,50 @@
+.header{
+    text-align: left;
+    background: #F5F5F5;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    /* border:1px solid lightgray; */
+}
+
+.content{
+    padding: 10px;
+    font-size: 13px;
+    margin:0px;
+}
+
+.inputBox {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.label{
+    padding-top: 5px;
+}
+
+.mandatory-field::after {
+    content: "*";
+    color: rgb(255, 0, 0);
+    position: absolute;
+    /* left: -3px; */
+}
+
+.add-btn{
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+}
+
+.add-btn:hover{
+    background-color: #3E4A84;
+    color: white;
+}
+
+.cursor-not-allowed{
+    cursor: not-allowed;
+}
+
+.test{
+    background-color: red !important;
+}

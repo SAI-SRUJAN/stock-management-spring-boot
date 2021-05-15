@@ -1,0 +1,29 @@
+.mat-dialog-title{
+    margin: 0 0 10px;
+}
+
+.mat-dialog-content{
+    overflow: hidden;
+}
+
+.close-icon{
+    float:right !important;
+    margin-top:7px;
+    cursor: pointer;
+}
+
+.pad-0{
+    padding: 0px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.pad-tp-5{
+    padding-top: 5px;
+}
+
+.pull-right{
+    float: right;
+}

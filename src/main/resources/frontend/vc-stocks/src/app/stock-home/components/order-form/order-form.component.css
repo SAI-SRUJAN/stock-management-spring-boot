@@ -1,0 +1,32 @@
+.order-form-table{
+    margin-top:10px;
+}
+
+.header{
+    text-align: left;
+    background: #F5F5F5;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    /* border:1px solid lightgray; */
+}
+
+.order-form-content{
+    margin: 15px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.btn{
+    background-color: #017BCE;
+    border: 1px solid #ddd;
+    color: white;
+}
+
+.btn:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+.update-btn {
+    margin-top:10px
+}
