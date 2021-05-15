@@ -1,3 +1,3 @@
 INSERT INTO users (username, password, enabled)
-SELECT 'vc', 'manage', 'TRUE'
+SELECT 'admin', 'manage', 'TRUE'
 WHERE NOT EXISTS (SELECT * FROM users WHERE username='vc');
