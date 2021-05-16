@@ -167,7 +167,7 @@ var AppComponent = /** @class */ (function () {
         });
     };
     AppComponent.prototype.signout = function () {
-        window.location.href = 'http://localhost:3000/logout';
+        window.location.href = 'https://victory-comforts.herokuapp.com/logout';
     };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
   }
 
   signout() {
-    window.location.href = 'http://localhost:3000/logout';
+    window.location.href = 'https://victory-comforts.herokuapp.com/logout';
   }
 
 }
