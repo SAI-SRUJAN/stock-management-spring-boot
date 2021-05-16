@@ -144,7 +144,10 @@ export class OrderPendingComponent implements OnInit {
   }
 
   setHeight() {
-    const height = window.innerHeight - document.querySelector('.order-pending-content').getBoundingClientRect().top;
+    let height = window.innerHeight - document.querySelector('.order-pending-content').getBoundingClientRect().top;
+    if (height < 350) {
+      height = 350;
+    }
     return height;
   }
 

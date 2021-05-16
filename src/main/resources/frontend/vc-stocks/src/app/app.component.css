@@ -12,6 +12,8 @@
 
 .image{
     background: white;
+    display: flex;
+    justify-content: center;
 }
 
 .pad-0 {
@@ -134,4 +136,13 @@
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .header-content {
+      font-size: 14px;
+    }
+    .user-name{
+        margin:0px
+    }
   }

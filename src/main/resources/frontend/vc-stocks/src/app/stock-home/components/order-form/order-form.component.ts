@@ -171,12 +171,15 @@ export class OrderFormComponent implements OnInit {
     }
   }
 
-  isDataChanged(){
+  isDataChanged() {
     return new ComparePipe().isdeepCompareable(this.rowData, this.rowDataCopy);
   }
 
-  setHeight(){
-    const height =  window.innerHeight - document.querySelector('.order-form-content').getBoundingClientRect().top - 50;
+  setHeight() {
+    let height = window.innerHeight - document.querySelector('.order-form-content').getBoundingClientRect().top - 50;
+    if (height < 350) {
+      height = 350;
+    }
     return height;
   }
 

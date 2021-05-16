@@ -1,12 +1,12 @@
 <div class="container-fluid header">
     <div class="row">
-        <div class="col-sm-2 image">
+        <div class="col-xs-12 col-md-2 image">
             <img class="logo" src="../assets/vc.png" />
         </div>
-        <div class="col-sm-7 header-content">
+        <div class="col-6 col-md-7  header-content">
             STOCK MANAGEMENT
         </div>
-        <div class="col-sm-3 user-name">
+        <div class="col-6 col-md-3 user-name">
             <button class="user-name-button" mat-button [matMenuTriggerFor]="menu">{{username}}<i
                     class="arrow down"></i></button>
             <mat-menu #menu="matMenu">
@@ -15,39 +15,47 @@
         </div>
     </div>
 </div>
-<nav class="navbar navbar-expand-sm">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <div id="homeButton" class="nav-bar-content tab" routerLink="/home">
-                Home
-            </div>
-        </li>
-        <li class="nav-item">
-            <div id="addButton" class="nav-bar-content tab" routerLink="/add">
-                Add Band
-            </div>
-        </li>
-        <li class="nav-item">
-            <div id="orderFormButton" class="nav-bar-content tab" routerLink="/orderForm">
-                Order Form
-            </div>
-        </li>
-        <li class="nav-item">
-            <div id="historyButton" class="nav-bar-content tab" routerLink="/history">
-                Stock History
-            </div>
-        </li>
-        <li class="nav-item">
-            <div id="orderPendingButton" class="nav-bar-content tab" routerLink="/orderPending">
-                Order Pending
-            </div>
-        </li>
-        <li *ngIf="isAdmin" class="nav-item">
-            <div id="userRegistrationButton" class="nav-bar-content tab" routerLink="/userRegistration">
-                User Registration
-            </div>
-        </li>
-    </ul>
+<nav class="navbar navbar-expand-md navbar-light">
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <div id="homeButton" class="nav-bar-content tab" routerLink="/home">
+                    Home
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="addButton" class="nav-bar-content tab" routerLink="/add">
+                    Add Band
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="orderFormButton" class="nav-bar-content tab" routerLink="/orderForm">
+                    Order Form
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="historyButton" class="nav-bar-content tab" routerLink="/history">
+                    Stock History
+                </div>
+            </li>
+            <li class="nav-item">
+                <div id="orderPendingButton" class="nav-bar-content tab" routerLink="/orderPending">
+                    Order Pending
+                </div>
+            </li>
+            <li *ngIf="isAdmin" class="nav-item">
+                <div id="userRegistrationButton" class="nav-bar-content tab" routerLink="/userRegistration">
+                    User Registration
+                </div>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <hr />

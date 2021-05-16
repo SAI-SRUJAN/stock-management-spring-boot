@@ -268,7 +268,10 @@ export class StockHomeComponent implements OnInit {
   }
 
   setHeight() {
-    const height = window.innerHeight - document.querySelector('.stocks-table').getBoundingClientRect().top - 50;
+    let height = window.innerHeight - document.querySelector('.stocks-table').getBoundingClientRect().top - 50;
+    if (height < 350) {
+      height = 350;
+    }
     return height;
   }
 }

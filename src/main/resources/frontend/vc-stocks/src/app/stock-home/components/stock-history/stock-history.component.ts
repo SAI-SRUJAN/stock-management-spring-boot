@@ -180,7 +180,10 @@ export class StockHistoryComponent implements OnInit {
   }
 
   setHeight() {
-    const height = window.innerHeight - document.querySelector('.stocks-table').getBoundingClientRect().top;
+    let height = window.innerHeight - document.querySelector('.stocks-table').getBoundingClientRect().top;
+    if (height < 350) {
+      height = 350;
+    }
     return height;
   }
 
